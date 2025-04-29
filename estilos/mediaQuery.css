@@ -1,1 +1,53 @@
 @charset "UTF-8";
+
+/* Typical Devicce Breakpoints 2025
+------------------------------------
+    pequenas telas: até 600px
+    Celular: 600px - 768px
+    Tablet: 768 até 992px
+    Desktop: 99spx até 1200px
+    Grandes telas: Acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 90vw;
+    }
+
+    section#login > div#formImagem {
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+
+    section#login > div#formLogin {
+        width: 70%;
+        height: 100%;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    section#login {
+        width: 990px;
+    }
+
+    section#login > div#formImagem {
+        width: 50%;
+        max-width: 500px;
+        height: 100%;
+        float: right;
+    }
+
+    section#login > div#formLogin {
+        width: 50%;
+        float: left;
+    }
+}
