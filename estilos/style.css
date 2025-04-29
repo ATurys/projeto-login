@@ -26,17 +26,17 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
 
+    overflow: hidden;
     margin: auto;
     width: 250px;
     height: 550px;
     background-color: white;
     border-radius: 15px;
 
+    transform: translate(-50%, -50%);
     transition: width 0.5s, height 0.5s;
-    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
 }
 
 h1 {
@@ -76,24 +76,42 @@ div.formDados {
     margin: auto;
     margin-top: -15px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 7px;
     height: 40px;
 }
 
 div.formDados > input {
-    background-color: aqua;
+    background-color: #6db1ae;
+    font-size: 1em;
     box-shadow: none;
-    border-radius: 5px;
-    border: none;
+    border-radius: 7px;
+    border: 2px solid #5f2c82;
     margin-top: -5px;
+
+    width: calc(100% - 40px);
+    height: 40px;
+
+    display: block;
+    float:inline-end;
+
+    transform: translate(9px, -5px);
+}
+
+div.formDados > input:focus-within {
+    background-color: white;
+    border: none;
 }
 
 div.formDados > label {
     display: none;
 }
 
-.formIcon {
+div.formDados > span {
     color: white;
+    font-size: 2em;
+    margin-top: -10px;
+    padding: 5px;
+    width: 40px;
 }
 
 #botaoEnviar {
