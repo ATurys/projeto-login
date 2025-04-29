@@ -50,4 +50,12 @@
         width: 50%;
         float: left;
     }
+
+    div#formLogin > h1 {
+        font-size: 2em;
+    }
+
+    div#formLogin > p {
+        font-size: 1.2em;
+    }
 }

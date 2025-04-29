@@ -31,7 +31,7 @@ section#login {
 
     margin: auto;
     width: 250px;
-    height: 500px;
+    height: 550px;
     background-color: white;
     border-radius: 15px;
 
@@ -60,7 +60,7 @@ div#formImagem {
 }
 
 div#formLogin {
-    display: inline-block;
+    display: block;
 }
 
 main {
@@ -72,18 +72,79 @@ main {
 div.formDados {
     display: block;
     background-color: #5f2c82;
-    margin: 0px 5px;
+    width: 90%;
+    margin: auto;
     margin-top: -15px;
     padding: 10px;
     border-radius: 10px;
+    height: 40px;
 }
 
 div.formDados > input {
     background-color: aqua;
     box-shadow: none;
+    border-radius: 5px;
+    border: none;
+    margin-top: -5px;
+}
+
+div.formDados > label {
+    display: none;
+}
+
+.formIcon {
+    color: white;
 }
 
 #botaoEnviar {
     width: 90%;
     margin: auto;
+    margin-top: 10px;
+    height: 40px;
+
+    display: block;
+
+    font-size: 1em;
+    background-color: #49a09d;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#botaoEnviar:hover {
+    background-color: #3c8380;
+}
+
+form > a.botao {
+    text-align: center;
+    font-size: 1em;
+
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    height: 40px;
+
+    padding-top: 5px;
+
+    display: block;
+
+    color: #3c8380;
+    text-decoration: none;
+    background-color: white;
+
+    border: solid;
+    border-color: #49a09d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form > a.botao:hover {
+    background-color: #49a09d;
+    color: white;
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
 }
